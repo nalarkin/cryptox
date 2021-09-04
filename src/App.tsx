@@ -22,9 +22,9 @@ function App() {
         </Route>
       </Switch>
         
-        <p>
+        
         <Footer />
-        </p>
+        
       </header>
     </div>
   );

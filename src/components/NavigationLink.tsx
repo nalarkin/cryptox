@@ -1,19 +1,16 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { NavigationLinkProps } from '../interfaces';
 
-type NavigationLinkProps = {
-    text: string,
-    location: string,
-    size: string,
-    additionalClassNames?: string,
-}
+
 
 
 export default function NavigationLink({text, location, size, additionalClassNames}: NavigationLinkProps) {
-    // const classesForLink = `linkText ${size}`;
+    const classesForLink = `nav-link ${size}${additionalClassNames ? ` ${additionalClassNames}` : ''}`;
+
     return (
         <Link to={`/${location}`}
-            className={`nav-link ${size} ${additionalClassNames ? additionalClassNames : ''}`}>
+            className={classesForLink}>
             {text}
         </Link>
     );
