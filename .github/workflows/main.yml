@@ -6,8 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - run: yarn install
-      - run: yarn build
+      - run: CI='' yarn install
+      - run: CI='' yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
