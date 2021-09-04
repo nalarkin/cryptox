@@ -14,7 +14,7 @@ export default function LinkGroup({title, childrenLinkProps}:LinkGroupProps) {
     
     return (
         <div className='link-group'>
-            <div className='link-group-title'>
+            <div className='link-group-title X-Small'>
                 {title}
             </div>
             <div className='link-list'>

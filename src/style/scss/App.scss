@@ -11,9 +11,20 @@ $dark-text: #303030;
 
 
 
-.App {
-    text-align: center;
+// .App {
+//     text-align: center;
 
+// }
+
+main {
+    display: flex;
+    min-height: 60vh;
+    
+}
+
+.link-group{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -50,6 +61,13 @@ code {
 
 }
 
+.footer-company{
+    width: 5vw;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 
 
 // a {
@@ -75,15 +93,42 @@ code {
 
 // }
 
-// .nav-link {
-//     text-decoration: none;
-//     display: flex;
-//     width: min-content;
-//     flex-flow: column wrap;
-//     background-color: white;
+.nav-link {
+    text-decoration: none;
+    display: flex;
+    width: min-content;
+    flex-flow: column wrap;
+    // background-color: white;
+    color: $accent-text;
 
-//     :hover {
-//         background-color: blue;
-//         // text-decoration: underline;
-//     }
-// }
+    &:hover {
+        color: $light-text;
+        // text-decoration: underline;
+    }
+}
+
+
+footer {
+    padding-top: 3%;
+    padding-left: 5%;
+    border-top: $accent-text;
+    border-bottom: none;
+    border-style: solid;
+    border-width: 1px;
+    // background-color: blue;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    justify-content: space-around;
+}
+
+
+
+
+
+.X-Small {
+    font-size: 0.7em;
+}

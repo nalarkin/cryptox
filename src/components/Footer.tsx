@@ -38,7 +38,7 @@ export default function Footer() {
                 content='content'
             />
             <LinkGroup
-                title='Link Group Title'
+                title='Links'
                 childrenLinkProps={linkGroupProps}
             />
         </footer>
