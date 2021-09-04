@@ -14,12 +14,6 @@ export default function Footer() {
         },
         {
             key: uuidv4(),
-            text: 'About',
-            location: 'about',
-            size: 'X-Small',
-        },
-        {
-            key: uuidv4(),
             text: 'History',
             location: 'history',
             size: 'X-Small',
@@ -28,6 +22,12 @@ export default function Footer() {
             key: uuidv4(),
             text: 'Compare',
             location: 'compare',
+            size: 'X-Small',
+        },
+        {
+            key: uuidv4(),
+            text: 'About',
+            location: 'about',
             size: 'X-Small',
         },
     ]

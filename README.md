@@ -4,7 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+
+### Using SASS
+
+I'm using dart SASS. Comamnd to have it watch for CSS changes
+
+`sass --watch src/style/scss:src/style`
+
 
 ### `yarn start`
 

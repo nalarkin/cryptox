@@ -1,0 +1,89 @@
+$primary-color: #303030;
+$primary-light: #8A8A8A;
+$primary-light2: #C1C1C1;
+$secondary-color: #000000;
+$accent-color: #000000;
+$light-text: #DCDCDC;
+$accent-text: #707070;
+$dark-text: #303030;
+
+
+
+
+
+.App {
+    text-align: center;
+
+}
+
+
+.App-header {
+    background-color: $primary-color;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: $light-text;
+}
+
+
+.App-link {
+    color: $light-text;
+
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+
+}
+
+
+
+a {
+    :link {
+        text-decoration: none;
+        background-color: red;
+    }
+
+    :visited {
+        text-decoration: none;
+    }
+
+    :hover {
+        text-decoration: none;
+        text-decoration: underline;
+    }
+
+    :active {
+        text-decoration: none;
+        text-decoration: underline;
+        color: orange;
+    }
+
+}
+
+.nav-link {
+    text-decoration: none;
+    display: flex;
+    width: min-content;
+    flex-flow: column wrap;
+    background-color: white;
+
+    :hover {
+        background-color: blue;
+        // text-decoration: underline;
+    }
+}
