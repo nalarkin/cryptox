@@ -1,8 +1,20 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import { NavigationLinkProps } from '../interfaces';
-import '../style/NavigationLink.css';
+import styled from 'styled-components';
 
+const StyledNavLink = styled(NavLink)`
+    text-decoration: none;
+
+    &:focus, &:visited, &:link, &:active {
+        text-decoration: none;
+        
+    }
+
+    &:hover {
+        color: green
+    }
+`;
 
 
 
@@ -10,15 +22,15 @@ export default function NavigationLink({text, location, size, additionalClassNam
     const classesForLink = `nav-link ${size}${additionalClassNames ? ` ${additionalClassNames}` : ''}`;
 
     return (
-        <NavLink 
+        <StyledNavLink 
+            exact
             to={`/${location}`}
             activeClassName='selected'
             className={classesForLink}
             activeStyle={{
-                fontWeight: "bold",
-                color: "red"
+                color: "yellow"
             }}>
             {text}
-        </NavLink>
+        </StyledNavLink>
     );
 }

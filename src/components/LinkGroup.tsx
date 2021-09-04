@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavigationLinkProps } from '../interfaces';
 import NavigationLink from './NavigationLink';
-import '../style/LinkGroup.css'
 
 interface LinkGroupProps {
     title: string,

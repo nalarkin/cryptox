@@ -18,7 +18,6 @@ describe('FooterCompany', () => {
             />
         </MemoryRouter>
         )
-        screen.debug();
         expect(screen.getByText(/company name/i)).toBeInTheDocument();
         expect(screen.getByText(/footer content/i)).toBeInTheDocument();
     });

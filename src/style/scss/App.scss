@@ -52,38 +52,38 @@ code {
 
 
 
-a {
-    :link {
-        text-decoration: none;
-        background-color: red;
-    }
+// a {
+//     :link {
+//         text-decoration: none;
+//         background-color: red;
+//     }
 
-    :visited {
-        text-decoration: none;
-    }
+//     :visited {
+//         text-decoration: none;
+//     }
 
-    :hover {
-        text-decoration: none;
-        text-decoration: underline;
-    }
+//     :hover {
+//         text-decoration: none;
+//         text-decoration: underline;
+//     }
 
-    :active {
-        text-decoration: none;
-        text-decoration: underline;
-        color: orange;
-    }
+//     :active {
+//         text-decoration: none;
+//         text-decoration: underline;
+//         color: orange;
+//     }
 
-}
+// }
 
-.nav-link {
-    text-decoration: none;
-    display: flex;
-    width: min-content;
-    flex-flow: column wrap;
-    background-color: white;
+// .nav-link {
+//     text-decoration: none;
+//     display: flex;
+//     width: min-content;
+//     flex-flow: column wrap;
+//     background-color: white;
 
-    :hover {
-        background-color: blue;
-        // text-decoration: underline;
-    }
-}
+//     :hover {
+//         background-color: blue;
+//         // text-decoration: underline;
+//     }
+// }

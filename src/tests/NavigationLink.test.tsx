@@ -19,7 +19,7 @@ describe('NavigationLink', () => {
         const linkText = 'Test Link Text'
         render(
         <MemoryRouter>
-        <NavigationLink text={linkText} location='location' size='X-Large' />
+        <NavigationLink key='1' text={linkText} location='location' size='X-Large' />
         </MemoryRouter>
         )
         expect(screen.getByText(linkText)).toBeInTheDocument();
@@ -29,7 +29,7 @@ describe('NavigationLink', () => {
         const linkText = 'Test Link Text'
         render(
         <MemoryRouter>
-            <NavigationLink text={linkText} location='location' size='X-Large' additionalClassNames="class1 class2" />
+            <NavigationLink key='1' text={linkText} location='location' size='X-Large' additionalClassNames="class1 class2" />
         </MemoryRouter>
         )
         expect(screen.getByText(linkText)).toBeInTheDocument();
