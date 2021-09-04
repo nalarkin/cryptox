@@ -12,7 +12,10 @@ describe('FooterCompany', () => {
     test('renders FooterCompany component', () => {
         render(
         <MemoryRouter>
-            <FooterCompany  company='Company Name' content='footer content'/>
+            <FooterCompany  
+                company='Company Name' 
+                content='footer content'
+            />
         </MemoryRouter>
         )
         screen.debug();

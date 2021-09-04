@@ -31,6 +31,7 @@ describe('LinkGroup', () => {
         )
         expect(screen.getByText(/test link/i)).toBeInTheDocument();
         expect(screen.getByText(/second link/i)).toBeInTheDocument();
+        expect(screen.getByText(testTitle)).toBeInTheDocument();
         expect(screen.getAllByRole('link')).toHaveLength(2);
     });
     

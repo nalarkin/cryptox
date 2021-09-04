@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavigationLinkProps } from '../interfaces';
 import NavigationLink from './NavigationLink';
+import '../style/LinkGroup.css'
 
 interface LinkGroupProps {
     title: string,
@@ -14,16 +15,24 @@ export default function LinkGroup({title, childrenLinkProps}:LinkGroupProps) {
     
     return (
         <div className='link-group'>
-            {childrenLinkProps.map(({key, location, text, size}: NavigationLinkProps) => 
-                
-                <NavigationLink
+            <div className='link-group-title'>
+                {title}
+            </div>
+            <div className='link-list'>
+                {childrenLinkProps.map(({key, location, text, size}: NavigationLinkProps) => 
+                    
+                    <NavigationLink
                     key={key}
                     location={location} 
                     text={text}
                     size={size}
-                />
-            )
-            }
+                    />
+                    
+                    
+                )
+                }
+            </div>
+            
         </div>
     )
 }

@@ -4,9 +4,11 @@ import {Switch,Route} from "react-router-dom";
 
 import React from 'react';
 import './style/App.css';
-import Home from './components/HomePage';
+import HomePage from './components/HomePage';
 import Footer from './components/Footer';
-import About from './components/AboutPage';
+import AboutPage from './components/AboutPage';
+import HistoryPage from './components/HistoryPage';
+import ComparePage from "./components/ComparePage";
 
 function App() {
   return (
@@ -14,11 +16,17 @@ function App() {
       <header className="App-header">
       <Switch> 
         <Route path='/about'>
-            <About />
+            <AboutPage />
+        </Route>
+        <Route path='/history'>
+            <HistoryPage />
+        </Route>
+        <Route path='/compare'>
+            <ComparePage />
         </Route>
 
         <Route path='/'>
-            <Home />
+            <HomePage />
         </Route>
       </Switch>
         

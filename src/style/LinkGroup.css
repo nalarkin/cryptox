@@ -1,0 +1,7 @@
+.link-group .link-list{
+    display: flex;
+    flex-flow: column wrap; 
+    /* background-color: aliceblue; */
+    /* color: blue; */
+    
+}

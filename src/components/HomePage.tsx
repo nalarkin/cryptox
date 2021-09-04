@@ -2,20 +2,10 @@ import React from 'react'
 
 
 
-export default function Home() {
+export default function HomePage() {
     return (
-        <div>
-            <p>
-            Yep Cryptox.
-            </p>
-            <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            Learn React
-        </a>
-        </div>
+        <main id='HomePage'>
+            <h3>Home Page</h3>
+        </main>
     )
 }
