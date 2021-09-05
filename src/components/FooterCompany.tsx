@@ -10,13 +10,15 @@ interface FooterCompanyProps {
 export default function FooterCompany({company, content}: FooterCompanyProps) {
     return (
         <div className='footer-company'>
-            <img src={logo} className="App-logo" alt="logo" />
-            <div>
+            {/* <img src={logo} className="App-logo" alt="logo" /> */}
+            <div id='footer-company-text'>
                 {company}
             </div>
-            <p>
+            <div id='footer-content-text'>
                 {content}
-            </p>
+            </div>
+                
+            
         </div>
     )
 }

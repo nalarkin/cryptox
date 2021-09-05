@@ -9,31 +9,28 @@ import Footer from './components/Footer';
 import AboutPage from './components/AboutPage';
 import HistoryPage from './components/HistoryPage';
 import ComparePage from "./components/ComparePage";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <Switch> 
-        <Route path='/about'>
-            <AboutPage />
-        </Route>
-        <Route path='/history'>
-            <HistoryPage />
-        </Route>
-        <Route path='/compare'>
-            <ComparePage />
-        </Route>
+        <Header />
+        <Switch> 
+            <Route path='/about'>
+                <AboutPage />
+            </Route>
+            <Route path='/history'>
+                <HistoryPage />
+            </Route>
+            <Route path='/compare'>
+                <ComparePage />
+            </Route>
 
-        <Route path='/'>
-            <HomePage />
-        </Route>
-      </Switch>
-        
-        
+            <Route path='/'>
+                <HomePage />
+            </Route>
+        </Switch>
         <Footer />
-        
-      </header>
     </div>
   );
 }

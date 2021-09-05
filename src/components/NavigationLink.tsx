@@ -13,7 +13,7 @@ export default function NavigationLink({text, location, size, additionalClassNam
             activeClassName='selected'
             className={classesForLink}
             activeStyle={{
-                color: "yellow"
+                // color: "yellow"
             }}>
             {text}
         </NavLink>

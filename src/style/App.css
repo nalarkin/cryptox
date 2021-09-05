@@ -1,21 +1,40 @@
-main {
+main, #app-header {
   display: flex;
-  min-height: 60vh;
+  background-color: #303030;
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.App-header {
-  margin: 0;
+body {
   background-color: #303030;
-  min-height: 100vh;
+}
+
+main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #303030;
+  min-height: 40vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
   color: #DCDCDC;
 }
 
-.App-link {
+#app-header {
+  font-size: 1.6rem;
+  color: #DCDCDC;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+}
+a:hover {
   color: #DCDCDC;
 }
 
@@ -30,54 +49,90 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.footer-company {
-  width: 5vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 1.4rem;
-}
-
-.nav-link {
-  text-decoration: none;
+.header-link-list .header-link {
   display: flex;
   flex-direction: column;
   width: min-content;
   color: #707070;
 }
-.nav-link:hover {
+.header-link-list .header-link:hover {
   color: #DCDCDC;
 }
 
-footer {
-  font-size: 1.6rem;
-  padding-top: 3%;
-  border-top: #707070;
-  border-style: solid;
-  border-width: 1px;
-  width: 100%;
-  display: flex;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  justify-content: space-around;
+.header-link-list .selected {
+  color: yellow;
 }
 
 address {
-  text-decoration: none;
+  color: #C1C1C1;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   width: min-content;
 }
-address a {
-  text-decoration: none;
-  color: #707070;
+
+.header-link {
+  padding: 2% 5%;
 }
 
-.X-Small {
+.header-link-list {
+  display: flex;
+  justify-content: flex-end;
+  justify-self: flex-end;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+#app-header-title {
+  color: #DCDCDC;
+  font-size: 2rem;
+}
+
+footer {
+  display: flex;
+  font-size: 1.6rem;
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-link-list {
+  color: #8A8A8A;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer-link-container {
+  display: flex;
+  color: #C1C1C1;
   font-size: 1.2rem;
+}
+
+#footer-content-text {
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+#footer-company-text {
+  display: block flow;
+  font-size: 1.6rem;
+  color: #C1C1C1;
+  width: 100%;
+  padding-bottom: 0.1em;
+}
+
+.footer-company {
+  max-width: 30%;
+  min-width: 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  color: #707070;
 }
 
 /*# sourceMappingURL=App.css.map */
