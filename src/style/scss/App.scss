@@ -1,3 +1,5 @@
+
+
 $primary-color: #303030;
 $primary-light: #8A8A8A;
 $primary-light2: #C1C1C1;
@@ -6,6 +8,55 @@ $accent-color: #000000;
 $light-text: #DCDCDC;
 $accent-text: #707070;
 $dark-text: #303030;
+
+$font-xxxsmall: 0.8em;
+$font-xxsmall: 1.0rem;
+$font-xsmall: 1.2rem;
+$font-small: 1.4rem;
+$font-normal: 1.6rem;
+$font-large: 1.8rem;
+$font-xlarge: 2.0rem;
+$font-xxlarge: 2.2rem;
+$font-xxxlarge: 2.4rem;
+
+
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-column-tight {
+    @include flex-column;
+    width: min-content;
+    
+}
+
+@mixin flex-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+}
+
+@mixin flex-center-vert {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center-horiz {
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -19,16 +70,20 @@ $dark-text: #303030;
 main {
     display: flex;
     min-height: 60vh;
-    
+
 }
 
-.link-group{
-    display: flex;
-    flex-direction: column;
-}
+// .link-group {
+//     color: blue;
+//     // display: flex;
+//     // flex-direction: column;
+// }
+
 
 
 .App-header {
+    margin: 0;
+    
     background-color: $primary-color;
     min-height: 100vh;
     display: flex;
@@ -61,11 +116,13 @@ code {
 
 }
 
-.footer-company{
+.footer-company {
     width: 5vw;
-    display:flex;
-    flex-flow: column;
-    align-items: center;
+    @include flex-center-column;
+    font-size: $font-small;
+    // display: flex;
+    // flex-flow: column;
+    // align-items: center;
 }
 
 
@@ -95,9 +152,10 @@ code {
 
 .nav-link {
     text-decoration: none;
-    display: flex;
-    width: min-content;
-    flex-flow: column wrap;
+    @include flex-column-tight;
+    // display: flex;
+    // width: min-content;
+    // flex-flow: column wrap;
     // background-color: white;
     color: $accent-text;
 
@@ -109,26 +167,38 @@ code {
 
 
 footer {
+    font-size: $font-normal;
     padding-top: 3%;
-    padding-left: 5%;
+    // padding-left: 5%;
     border-top: $accent-text;
-    border-bottom: none;
+    // border-bottom: none;
     border-style: solid;
     border-width: 1px;
     // background-color: blue;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    // flex-flow: row wrap;
     border-bottom: none;
     border-left: none;
     border-right: none;
     justify-content: space-around;
 }
 
+address {
+    text-decoration: none;
+    font-size: $font-xsmall;
+    // background-color: orange;
+    @include flex-column-tight;
+    a {
+        text-decoration: none;
+        
+        color: $accent-text
+    }
+}
 
 
 
 
 .X-Small {
-    font-size: 0.7em;
+    font-size: $font-xsmall;
 }

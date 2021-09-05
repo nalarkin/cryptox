@@ -3,12 +3,8 @@ main {
   min-height: 60vh;
 }
 
-.link-group {
-  display: flex;
-  flex-direction: column;
-}
-
 .App-header {
+  margin: 0;
   background-color: #303030;
   min-height: 100vh;
   display: flex;
@@ -37,15 +33,17 @@ code {
 .footer-company {
   width: 5vw;
   display: flex;
-  flex-flow: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.4rem;
 }
 
 .nav-link {
   text-decoration: none;
   display: flex;
+  flex-direction: column;
   width: min-content;
-  flex-flow: column wrap;
   color: #707070;
 }
 .nav-link:hover {
@@ -53,23 +51,33 @@ code {
 }
 
 footer {
+  font-size: 1.6rem;
   padding-top: 3%;
-  padding-left: 5%;
   border-top: #707070;
-  border-bottom: none;
   border-style: solid;
   border-width: 1px;
-  width: 100vw;
+  width: 100%;
   display: flex;
-  flex-flow: row wrap;
   border-bottom: none;
   border-left: none;
   border-right: none;
   justify-content: space-around;
 }
 
+address {
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+}
+address a {
+  text-decoration: none;
+  color: #707070;
+}
+
 .X-Small {
-  font-size: 0.7em;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=App.css.map */

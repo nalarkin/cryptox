@@ -1,5 +1,6 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
+import FooterAuthor from './FooterAuthor';
 import FooterCompany from './FooterCompany';
 import LinkGroup from './LinkGroup';
 
@@ -41,6 +42,7 @@ export default function Footer() {
                 title='Links'
                 childrenLinkProps={linkGroupProps}
             />
+            <FooterAuthor />
         </footer>
     )
 }
