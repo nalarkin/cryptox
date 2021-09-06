@@ -18,25 +18,6 @@ export default function ConversionInput({initial}: ConversionProps) {
     // const [childB, updateChildB] = React.useState<string>('USD');
     const childA = 'BTC';
     const childB = 'USD';
-    
-    
-    
-
-    // function handleChange(name: string, val: string) {
-    //     if (/^[-+]?(\d+|Infinity)$/.test(val)) {
-    //         const numberVal = parseInt(val);
-    //         if (name === 'crypto') {
-    //             updateCurrencyValue(val);
-    //             // math here
-    //         } else {
-    //             updateCryptoValue(val);
-    //             // math here
-    //         }
-    //     }
-        
-
-    //     // updateValue(val);
-    // }
 
     function cryptoToCurrency(e: React.ChangeEvent<HTMLInputElement>) {
         const newValue = e.target.value;
@@ -71,11 +52,11 @@ export default function ConversionInput({initial}: ConversionProps) {
     }
 
     return (
-        <div id='converter-input'>
-            <div className='currency-header currency-grid-1-1'><h2>{childA}</h2></div>
-            <div className='currency-header currency-grid-1-2'><h2>{childB}</h2></div>
+        <div id='converter-input' className=' grid grid-cols-2  '>
+            <div className='currency-header currency-grid-1-1 font-semibold'><h2>{childA}</h2></div>
+            <div className='currency-header currency-grid-1-2 font-semibold'><h2>{childB}</h2></div>
             <input 
-                className='currency-grid-2-1'
+                className='currency-grid-2-1 text-black text-center mr-5 ml-5 text-xl h-12 mt-5 p-2 rounded-lg'
                 name={childA}
                 type="text" 
                 value={cryptoValue} 
@@ -83,7 +64,7 @@ export default function ConversionInput({initial}: ConversionProps) {
             />        
             
             <input 
-                className='currency-grid-2-2'
+                className='currency-grid-2-2 text-black text-center mr-5 ml-5 text-xl mt-5 p-2 rounded-lg'
                 name={childB}
                 type="text" 
                 value={currencyValue} 

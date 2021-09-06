@@ -1,0 +1,27 @@
+/* ./src/index.css */
+@tailwind base;
+
+@layer base {
+    h1 {
+      @apply text-4xl text-center mt-5 mb-10 font-semibold min-w-min;
+    }
+    h2 {
+      @apply text-xl;
+    }
+    h3 {
+      @apply text-lg;
+    }
+    a {
+      @apply hover:text-white text-gray-500;
+    }
+    header .selected {
+        @apply text-yellow-400;
+    }
+    html {
+        @apply bg-gray-800;
+    }
+  }
+
+@tailwind components;
+@tailwind utilities;
+
