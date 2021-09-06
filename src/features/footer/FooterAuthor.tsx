@@ -8,7 +8,7 @@ export default function FooterAuthor() {
                 Nathan Larkin <br />
                 <a href="mailto:nlarkin.us@gmail.com" className=''>nlarkin.us@gmail.com <br /></a>
                 <a href="tel:+17045334302">(704) 533-4302 <br /></a>
-                <a href=" www.linkedin.com/in/nalarkin">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/nalarkin" target="_blank" rel='noreferrer'>LinkedIn</a>
             </div>
             
         </address>
