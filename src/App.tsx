@@ -14,7 +14,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App bg-gray-800 text-gray-200 p-10 min-h-full flex-auto">
+    <div className="App bg-gray-800 text-gray-200 py-10 px-20 focus-within:min-h-full flex-auto">
         <Header />
         <Switch> 
             <Route path='/about'>

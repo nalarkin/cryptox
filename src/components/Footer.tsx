@@ -13,45 +13,49 @@ export default function Footer() {
             text: 'Home',
             location: '',
             size: 'X-Small',
-            additionalClassNames: 'footer-link'
+            additionalClassNames: 'footer-link w-min'
         },
         {
             key: uuidv4(),
             text: 'History',
             location: 'history',
             size: 'X-Small',
-            additionalClassNames: 'footer-link'
+            additionalClassNames: 'footer-link w-min'
         },
         {
             key: uuidv4(),
             text: 'Compare',
             location: 'compare',
             size: 'X-Small',
-            additionalClassNames: 'footer-link'
+            additionalClassNames: 'footer-link w-min'
         },
         {
             key: uuidv4(),
             text: 'About',
             location: 'about',
             size: 'X-Small',
-            additionalClassNames: 'footer-link'
+            additionalClassNames: 'w-min'
         },
     ]
     return (
-        <footer className='flex flex-wrap pt-10'>
+        <footer className='mr-5 w-full mt-10 grid grid-flow-col text-left  '>
+            <div>
             <FooterCompany 
                 company='Cryptox' 
-                content=''
+                content='Mission statement...'
             />
-            <div className='footer-link-container'>
+            <div className='footer-link-container justify-self-left'>
                 <LinkGroup
                     title='Links'
                     childrenLinkProps={linkGroupProps}
-                    additionalClasses='flex flex-col flex-grow '
+                    additionalClasses='flex flex-col w-min '
                 />
+            </div>
             </div>
             
             <FooterAuthor />
+           
+            
         </footer>
     )
 }
