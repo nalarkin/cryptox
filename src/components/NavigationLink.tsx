@@ -11,7 +11,7 @@ export default function NavigationLink({text, location, size, additionalClassNam
             exact
             to={`/${location}`}
             activeClassName='selected'
-            className={classesForLink}
+            className={classesForLink + ' hover:text-yellow-500'}
             activeStyle={{
                 // color: "yellow"
             }}>

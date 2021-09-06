@@ -6,7 +6,7 @@ interface props {
 
 export default function HeaderTitle({title}: props) {
     return (
-        <div>
+        <div className='text-2xl text-gray-200 text-'>
             {title}
         </div>
     )

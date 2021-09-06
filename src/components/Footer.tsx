@@ -38,7 +38,7 @@ export default function Footer() {
         },
     ]
     return (
-        <footer>
+        <footer className='flex flex-wrap pt-10'>
             <FooterCompany 
                 company='Cryptox' 
                 content=''
@@ -47,7 +47,7 @@ export default function Footer() {
                 <LinkGroup
                     title='Links'
                     childrenLinkProps={linkGroupProps}
-                    additionalClasses='footer-link-list'
+                    additionalClasses='flex flex-col flex-grow '
                 />
             </div>
             

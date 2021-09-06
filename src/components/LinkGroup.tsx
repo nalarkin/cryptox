@@ -15,7 +15,7 @@ export default function LinkGroup({title, childrenLinkProps, additionalClasses}:
     // const curr = 
     const classesForLink = `link-list ${additionalClasses ? ` ${additionalClasses}` : ''}`;
     return (
-        <div className='link-group'>
+        <div className='link-group text-right'>
             {
                 title && <div className='link-group-title X-Small'>
                 {title}

@@ -71,11 +71,11 @@ export default function ConversionInput({initial}: ConversionProps) {
     }
 
     return (
-        <div id='converter-input'>
+        <div id='converter-input' className=' grid grid-cols-2 '>
             <div className='currency-header currency-grid-1-1'><h2>{childA}</h2></div>
             <div className='currency-header currency-grid-1-2'><h2>{childB}</h2></div>
             <input 
-                className='currency-grid-2-1'
+                className='currency-grid-2-1 text-black text-center'
                 name={childA}
                 type="text" 
                 value={cryptoValue} 
@@ -83,7 +83,7 @@ export default function ConversionInput({initial}: ConversionProps) {
             />        
             
             <input 
-                className='currency-grid-2-2'
+                className='currency-grid-2-2 text-black text-center'
                 name={childB}
                 type="text" 
                 value={currencyValue} 

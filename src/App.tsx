@@ -3,7 +3,8 @@ import {Switch,Route} from "react-router-dom";
 
 
 import React from 'react';
-import './style/App.css';
+// import '../src/style/App.css';
+
 import HomePage from './components/HomePage';
 import Footer from './components/Footer';
 import AboutPage from './components/AboutPage';
@@ -13,7 +14,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-800 text-gray-200 p-10 min-h-full flex-auto">
         <Header />
         <Switch> 
             <Route path='/about'>

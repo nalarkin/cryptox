@@ -37,18 +37,18 @@ export default function Header() {
         },
     ]
     return (
-        <header id='app-header'>
-            <div id='app-header-title'>
+        <header id='app-header' className='flex justify-between'>
+            <div id='app-header-title' className=''>
                 <HeaderTitle 
                     title='Cryptox' 
                 />
             </div>
             
-            <div className='header-link-container'>
+            <div className='header-link-container '>
                 <LinkGroup
                     title=''
                     childrenLinkProps={linkGroupProps}
-                    additionalClasses='header-link-list'
+                    additionalClasses='space-x-5 text-xl'
                 />
             </div>
            

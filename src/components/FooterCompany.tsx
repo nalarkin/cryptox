@@ -8,7 +8,7 @@ interface FooterCompanyProps {
 
 export default function FooterCompany({company, content}: FooterCompanyProps) {
     return (
-        <div className='footer-company'>
+        <div className='footer-company flex-grow'>
             {/* <img src={logo} className="App-logo" alt="logo" /> */}
             <div id='footer-company-text'>
                 {company}

@@ -2,6 +2,14 @@
 
 
 
+## TODO:
+
+* Add Redux store with async mock data gather for initial load, and loading very large dataset (for graphs on history page)
+* Add basic info in About Me
+* 
+
+
+
 ## Frameworks used to Make this Website
 
 * React
