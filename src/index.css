@@ -6,13 +6,13 @@
       @apply text-4xl text-center mt-5 mb-10 font-semibold min-w-min;
     }
     h2 {
-      @apply text-xl;
+      @apply text-2xl;
     }
     h3 {
       @apply text-lg;
     }
     a {
-      @apply hover:text-white text-gray-500;
+      @apply hover:text-white text-gray-400;
     }
     header .selected {
         @apply text-yellow-400;

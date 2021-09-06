@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import {MemoryRouter} from 'react-router-dom';
 
 import App from '../App';
-import {HomePage} from '../components/index';
+import {HomePage} from '../features/index';
 
 /**
  * getByText and getByRole should be your go-to search 

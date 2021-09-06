@@ -52,11 +52,11 @@ export default function ConversionInput({initial}: ConversionProps) {
     }
 
     return (
-        <div id='converter-input' className=' grid grid-cols-2  '>
-            <div className='currency-header currency-grid-1-1 font-semibold'><h2>{childA}</h2></div>
-            <div className='currency-header currency-grid-1-2 font-semibold'><h2>{childB}</h2></div>
+        <div id='converter-input' className=' grid grid-cols-2  font-semibold'>
+            <div className='currency-header currency-grid-1-1 '><h2>{childA}</h2></div>
+            <div className='currency-header currency-grid-1-2 '><h2>{childB}</h2></div>
             <input 
-                className='currency-grid-2-1 text-black text-center mr-5 ml-5 text-xl h-12 mt-5 p-2 rounded-lg'
+                className='currency-grid-2-1 text-black text-center mr-5 ml-5 text-xl h-12 mt-5 p-2 rounded-lg bg-gray-300'
                 name={childA}
                 type="text" 
                 value={cryptoValue} 
@@ -64,7 +64,7 @@ export default function ConversionInput({initial}: ConversionProps) {
             />        
             
             <input 
-                className='currency-grid-2-2 text-black text-center mr-5 ml-5 text-xl mt-5 p-2 rounded-lg'
+                className='currency-grid-2-2 text-black text-center mr-5 ml-5 text-xl mt-5 p-2 rounded-lg bg-gray-300'
                 name={childB}
                 type="text" 
                 value={currencyValue} 

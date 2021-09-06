@@ -2,7 +2,7 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
 // import HeaderTitle from './HeaderTitle';
 // import LinkGroup from './LinkGroup';
-import {LinkGroup, HeaderTitle} from './index';
+import {LinkGroup, HeaderTitle} from '../index';
 
 
 export default function Header() {
@@ -38,17 +38,16 @@ export default function Header() {
     ]
     return (
         <header id='app-header' className='flex justify-between'>
-            <div id='app-header-title' className=''>
                 <HeaderTitle 
                     title='Cryptox' 
                 />
-            </div>
+
             
             <div className='header-link-container '>
                 <LinkGroup
                     title=''
                     childrenLinkProps={linkGroupProps}
-                    additionalClasses='space-x-5 text-xl'
+                    additionalClasses='space-x-5 text-2xl'
                 />
             </div>
            

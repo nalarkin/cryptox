@@ -1,5 +1,5 @@
 import React from 'react'
-import { ConversionInput } from './index';
+import { ConversionInput } from '../features/index';
 
 
 export default function HomePage() {

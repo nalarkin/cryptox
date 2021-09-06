@@ -6,11 +6,11 @@ import React from 'react';
 // import '../src/style/App.css';
 
 import HomePage from './components/HomePage';
-import Footer from './components/Footer';
+import Footer from './features/footer/Footer';
 import AboutPage from './components/AboutPage';
 import HistoryPage from './components/HistoryPage';
 import ComparePage from "./components/ComparePage";
-import Header from "./components/Header";
+import {Header} from "./features/index";
 
 function App() {
   return (

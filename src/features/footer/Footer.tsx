@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 // import FooterAuthor from './FooterAuthor';
 // import FooterCompany from './FooterCompany';
 // import LinkGroup from './LinkGroup';
-import { FooterAuthor, FooterCompany, LinkGroup } from './index';
+import { FooterAuthor, FooterCompany, LinkGroup } from '../index';
 
 
 export default function Footer() {
@@ -38,7 +38,7 @@ export default function Footer() {
         },
     ]
     return (
-        <footer className='mr-5 w-full mt-10 grid grid-flow-col text-left  '>
+        <footer className='mr-5 w-full mt-10 grid grid-flow-col text-left text-base '>
             <div>
             <FooterCompany 
                 company='Cryptox' 
