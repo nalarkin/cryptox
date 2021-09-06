@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavigationLinkProps } from '../interfaces';
-import NavigationLink from './NavigationLink';
+import {NavigationLink} from './index';
+// import NavigationLink from './NavigationLink';
 
 interface LinkGroupProps {
     title: string,

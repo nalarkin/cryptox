@@ -1,4 +1,32 @@
-# Getting Started with Create React App
+# Cryptox Cryptocurrency Website
+
+
+
+## Frameworks used to Make this Website
+
+* React
+* SASS (style sheets)
+* Typescript
+* Jest (for testing)
+* Redux (to provide data throughout the site)
+* Create React App (for initializing project and module bundling)
+* Web Router Dom (for page navigation within the site)
+
+## Progress Timeline
+
+
+
+9-1: learning tests, learning react
+
+9-2: learning typescript, learning tests
+
+9-3: learning react-router
+
+9-4: learning SASS 
+
+9-5 : learning react redux  for state management
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

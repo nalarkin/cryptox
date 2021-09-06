@@ -1,7 +1,8 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import HeaderTitle from './HeaderTitle';
-import LinkGroup from './LinkGroup';
+// import HeaderTitle from './HeaderTitle';
+// import LinkGroup from './LinkGroup';
+import {LinkGroup, HeaderTitle} from './index';
 
 
 export default function Header() {

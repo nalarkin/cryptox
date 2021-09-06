@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react';
 import {MemoryRouter} from 'react-router-dom';
 
 import App from '../App';
+import {HomePage} from '../components/index';
 
 /**
  * getByText and getByRole should be your go-to search 
@@ -32,19 +33,32 @@ import App from '../App';
 
  
 describe('App', () => {
-  test('renders App component', () => {
-    render(
-        <MemoryRouter>
-            <App />
-        </MemoryRouter>
-    );
- 
+    test('renders App component', () => {
+        render(
+            <MemoryRouter>
+                <App />
+            </MemoryRouter>
+        );
+
+    
     // expect(screen.getByText('Learn React')).toBeInTheDocument();
     // regex below
     // expect(screen.getByText(/save/)).toBeInTheDocument();
     // get by role will show roles that are available if the one you providde doesn't exist
     //screen.getByRole('');
   });
+    test('navigates to home page', () => {
+        render(
+        <MemoryRouter initialEntries={['/users/2']}>
+            <HomePage  
+            />
+        </MemoryRouter>
+        )
+        screen.debug();
+        // expect(screen.getByText(/nathan larkin/i)).toBeInTheDocument();
+        // expect(screen.getAllByRole('link').length).toBe(3);
+});
+
 });
 
 /**So quite often it isn't necessary to assign aria 

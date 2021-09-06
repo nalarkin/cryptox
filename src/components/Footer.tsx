@@ -1,8 +1,9 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import FooterAuthor from './FooterAuthor';
-import FooterCompany from './FooterCompany';
-import LinkGroup from './LinkGroup';
+// import FooterAuthor from './FooterAuthor';
+// import FooterCompany from './FooterCompany';
+// import LinkGroup from './LinkGroup';
+import { FooterAuthor, FooterCompany, LinkGroup } from './index';
 
 
 export default function Footer() {

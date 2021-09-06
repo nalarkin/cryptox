@@ -6,8 +6,9 @@ export default function HistoryPage() {
     return (
         <main id='HistoryPage'>
             <h1>
-                History Page
+                History 
             </h1>
+
         </main>
     )
 }
