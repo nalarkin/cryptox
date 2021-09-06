@@ -14,12 +14,21 @@
     a {
       @apply hover:text-white text-gray-400;
     }
-    header .selected {
+    nav .selected {
         @apply text-yellow-400;
     }
     html {
         @apply bg-gray-800;
     }
+
+    /*This is to create site-wide header-content-footer layout*/
+    /*Expands the main content to fill empty space so footer stays at bottom*/
+    #app {
+        /* min-height: 100%; */
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
   }
 
 @tailwind components;

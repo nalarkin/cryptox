@@ -14,25 +14,37 @@ import {Header} from "./features/index";
 
 function App() {
   return (
-    <div className="App bg-gray-800 text-gray-200 py-10 px-20 focus-within:min-h-full flex-auto">
-        <Header />
-        <Switch> 
-            <Route path='/about'>
-                <AboutPage />
-            </Route>
-            <Route path='/history'>
-                <HistoryPage />
-            </Route>
-            <Route path='/compare'>
-                <ComparePage />
-            </Route>
+      //bg-gray-800
+      // grid grid-rows-3 grid-rows-auto
+        <div id= 'app' className=" text-gray-200 pt-10 px-20 min-h-screen">
+            <div className=''>
+            <Header />
+            </div>
+            
+            <div className=' flex-grow'>
+                <Switch> 
+                    <Route path='/about'>
+                        <AboutPage />
+                    </Route>
+                    <Route path='/history'>
+                        <HistoryPage />
+                    </Route>
+                    <Route path='/compare'>
+                        <ComparePage />
+                    </Route>
 
-            <Route path='/'>
-                <HomePage />
-            </Route>
-        </Switch>
-        <Footer />
+                    <Route path='/'>
+                        <HomePage />
+                    </Route>
+                </Switch>
+            </div>
+            <div className='mb-5'>
+            <Footer />
+            </div>
+        
+        
     </div>
+    
   );
 }
 

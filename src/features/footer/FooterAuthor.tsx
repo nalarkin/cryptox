@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function FooterAuthor() {
     return (
-        <address role="contentinfo"  className='text-right ml-5w-min justify-self-end'>
+        //ml-5w-min justify-self-end
+        <address role="contentinfo"  className='text-right ml-auto'>
             <div className='w-min'>
                 Nathan Larkin <br />
                 <a href="mailto:nlarkin.us@gmail.com" className=''>nlarkin.us@gmail.com <br /></a>

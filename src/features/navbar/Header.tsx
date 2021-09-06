@@ -37,21 +37,18 @@ export default function Header() {
         },
     ]
     return (
-        <header id='app-header' className='flex justify-between'>
-                <HeaderTitle 
-                    title='Cryptox' 
-                />
-
-            
-            <div className='header-link-container '>
-                <LinkGroup
-                    title=''
-                    childrenLinkProps={linkGroupProps}
-                    additionalClasses='space-x-5 text-2xl'
-                />
+        <nav id='app-header' className='flex flex-row'>
+            <HeaderTitle 
+                title='Cryptox' 
+            />
+            <div className='ml-auto'>
+            <LinkGroup
+                title=''
+                childrenLinkProps={linkGroupProps}
+                additionalClasses='space-x-5 text-2xl '
+            />
             </div>
-           
             
-        </header>
+        </nav>
     )
 }
