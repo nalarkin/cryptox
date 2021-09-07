@@ -16,9 +16,9 @@ function App() {
   return (
       //bg-gray-800
       // grid grid-rows-3 grid-rows-auto
-        <div id= 'app' className=" text-gray-200 pt-10 px-20 min-h-screen">
+        <div id= 'app' className=" text-gray-200 pt-10 px-7  md:pt-10 md:px-20 min-h-screen">
             <div className=''>
-            <Header />
+            {/* <Header /> */}
             </div>
             
             <div className=' flex-grow'>

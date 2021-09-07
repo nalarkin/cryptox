@@ -4,9 +4,29 @@
 
 ## TODO:
 
-* 
 * Add basic info in About Me
-* 
+* Mobile Improvements (use dev tools emulation)
+  * Add a hamburger menu for mobile
+    * https://ibaslogic.com/how-to-add-hamburger-menu-in-react/
+    * can use react hooks to toggle width of hamburger menu
+    * only should be visible to mobile
+  * change converter to grid layout, make grid layout into a column for mobile users only
+  * change global padding of site for mobile only
+* Graph
+  * https://airbnb.io/visx/docs/xychart
+  
+    * looks promising!
+  
+    * ### `Mock.bitcoinPrice`
+  
+    * https://airbnb.io/visx/docs/mock-data
+  
+  * try easy react graph standard
+  
+    * https://recharts.org/en-US/examples
+  
+  * nivo graph
+    * Change x axis of data graph to dates
 
 
 

@@ -4,9 +4,9 @@ import { ConversionInput } from '../features/index';
 
 export default function HomePage() {
     return (
-        <main id='HomePage' className=' mx-auto '>
+        <main id='HomePage' className=' '>
             <h1 className=' '>Home Page</h1>
-            <div className='flex text-center justify-center'>
+            <div className=' text-center  mx-auto'>
                 <ConversionInput initial='1'/>
             </div>
             
