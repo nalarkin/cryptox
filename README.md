@@ -4,7 +4,7 @@
 
 ## TODO:
 
-* Add Redux store with async mock data gather for initial load, and loading very large dataset (for graphs on history page)
+* 
 * Add basic info in About Me
 * 
 
@@ -13,12 +13,12 @@
 ## Frameworks used to Make this Website
 
 * React
-* SASS (style sheets)
 * Typescript
 * Jest (for testing)
 * Redux (to provide data throughout the site)
 * Create React App (for initializing project and module bundling)
 * Web Router Dom (for page navigation within the site)
+* Tailwind (utility focused css framework.)
 
 ## Progress Timeline
 
@@ -32,7 +32,9 @@
 
 9-4: learning SASS 
 
-9-5 : learning react redux  for state management
+9-5 : learning react redux  for state management, started learning tailwind for css
+
+9-6 : migrated site from using sass to using tailwind exclusively, added redux example counter to website
 
 
 
@@ -41,11 +43,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 
-### Using SASS
-
-I'm using dart SASS. Comamnd to have it watch for CSS changes
-
-`sass --watch src/style/scss:src/style`
 
 
 ### `yarn start`

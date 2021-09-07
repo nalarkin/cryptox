@@ -9,7 +9,10 @@ export default function HistoryPage() {
             <h1>
                 History 
             </h1>
-            <Counter />
+            <div className=''>
+                <Counter />
+            </div>
+            
 
         </main>
     )

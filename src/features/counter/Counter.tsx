@@ -18,11 +18,11 @@ export function Counter() {
   const incrementValue = Number(incrementAmount) || 0;
 
   return (
-    <div className='text-xs'>
-        <div>This is a protopye of the counter app for redux state manamgent. Using to prove redux works atm.</div>
+    <div className='text-xs mx-auto  flex text-center flex-col'>
+        <div className='text-center'>This is a protopye of the counter app for redux state manamgent. Using to prove redux works atm.</div>
       <div className=''>
         <button
-          className='border-2 my-3 mx-3 rounded-lg p-2 ml-36'
+          className='border-2 my-3 ml-auto mr-5 rounded-lg p-2 ml-36'
 
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
@@ -31,7 +31,7 @@ export function Counter() {
         </button>
         <span>{count}</span>
         <button
-                    className='border-2 my-3 mx-3 rounded-lg p-2'
+                    className='border-2 my-3 ml-5 mr-auto rounded-lg p-2'
 
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
@@ -41,14 +41,14 @@ export function Counter() {
       </div>
       <div>
         <input
-            className='text-black w-20 text-center ml-36'
+            className='text-black w-20 text-center mx-auto'
           aria-label="Set increment amount"
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
         />
         <br />
         <button
-        className='border-2 my-3 mx-3 rounded-lg p-2'
+        className='border-2 my-3 ml-auto rounded-lg p-2'
           onClick={() => dispatch(incrementByAmount(incrementValue))}
         >
           Add Amount
@@ -60,7 +60,7 @@ export function Counter() {
           Add Async
         </button>
         <button
-                    className='border-2 my-3 mx-3 rounded-lg p-2'
+                    className='border-2 my-3 mr-auto rounded-lg p-2'
 
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >

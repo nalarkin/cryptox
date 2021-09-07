@@ -10,3 +10,4 @@ export { default as HomePage } from '../components/HomePage';
 export { default as LinkGroup } from '../components/LinkGroup';
 export { default as NavigationLink } from '../components/NavigationLink';
 export { default as ConversionInput } from './conversion/ConversionInput';
+export {MyResponsiveLine } from './graph/LineGraph';
