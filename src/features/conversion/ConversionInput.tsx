@@ -52,7 +52,7 @@ export default function ConversionInput({initial}: ConversionProps) {
     }
 
     return (
-        <div id='converter-input' className='bg-red-500 grid grid-cols-12 grid-rows-12 font-semibold'>
+        <div id='converter-input' className='grid grid-cols-12 grid-rows-12 font-semibold'>
 
             <div className='col-start-1 col-end-7 row-start-1 row-end-3 grid flex-shrink place-self-center justify-self-center '><h2>{childA}</h2></div>
             <div className='col-start-7 col-end-13 row-start-1 row-end-3 place-self-center md:justify-self-center '><h2>{childB}</h2></div>

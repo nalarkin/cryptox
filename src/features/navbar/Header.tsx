@@ -37,7 +37,7 @@ export default function Header() {
         },
     ]
     return (
-        <nav id='app-header' className='flex flex-row'>
+        <nav id='app-header' className='flex-row hidden md:flex '>
             <HeaderTitle 
                 title='Cryptox' 
             />

@@ -11,6 +11,7 @@ import AboutPage from './components/AboutPage';
 import HistoryPage from './components/HistoryPage';
 import ComparePage from "./components/ComparePage";
 import {Header} from "./features/index";
+import HamburgerMenu from './features/hamburger/HamburgerMenu';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       // grid grid-rows-3 grid-rows-auto
         <div id= 'app' className=" text-gray-200 pt-10 px-7  md:pt-10 md:px-20 min-h-screen">
             <div className=''>
-            {/* <Header /> */}
+                <HamburgerMenu />
+            <Header />
             </div>
             
             <div className=' flex-grow'>

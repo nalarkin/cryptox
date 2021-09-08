@@ -12,9 +12,7 @@ export default function NavigationLink({text, location, size, additionalClassNam
             to={`/${location}`}
             activeClassName='selected'
             className={classesForLink}
-            activeStyle={{
-                // color: "yellow"
-            }}>
+            >
             {text}
         </NavLink>
     );
